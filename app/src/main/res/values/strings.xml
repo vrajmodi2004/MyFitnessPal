@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Fitness Tracker</string>
+    <!-- Gender options -->
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Body type options -->
+    <string-array name="body_type_array">
+        <item>Ectomorph</item>
+        <item>Mesomorph</item>
+        <item>Endomorph</item>
+    </string-array>
+
+    <!-- Goal options -->
+    <string-array name="goal_array">
+        <item>Weight Loss</item>
+        <item>Muscle Gain</item>
+        <item>Endurance</item>
+        <item>Maintain Fitness</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

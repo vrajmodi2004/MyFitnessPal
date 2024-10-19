@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backg6"
+        android:scaleType="centerCrop"/>
+
+    <!-- Semi-transparent overlay for better readability -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <!-- Main content layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center">
+
+        <!-- Feedback title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLEASE GIVE YOUR FEEDBACK"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_light"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Feedback input field with a white background -->
+        <EditText
+            android:id="@+id/edittext_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your feedback here"
+            android:gravity="top"
+            android:minHeight="150dp"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="#2E7D32"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/button_submit_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Feedback"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#388E3C"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            android:elevation="4dp"/>
+    </LinearLayout>
+</FrameLayout>
