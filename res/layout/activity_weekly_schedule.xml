@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backg6"
+        android:scaleType="centerCrop"/>
+
+    <!-- Semi-transparent overlay to make the content more readable -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <!-- Main content layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Weekly Workout Routine"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Container for ScrollView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Day and Routine for Monday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/mondayLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Monday:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/mondayRoutine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Chest and Triceps"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <!-- Day and Routine for Tuesday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tuesdayLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tuesday:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/tuesdayRoutine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Back and Biceps"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <!-- Day and Routine for Wednesday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/wednesdayLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Wednesday:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/wednesdayRoutine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Legs and Shoulders"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <!-- Day and Routine for Thursday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/thursdayLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Thursday:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/thursdayRoutine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Core"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <!-- Day and Routine for Friday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/fridayLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Friday:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/fridayRoutine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Chest and Shoulders"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <!-- Day and Routine for Saturday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/saturdayLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Saturday:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/saturdayRoutine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Legs and Glutes"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <!-- Day and Routine for Sunday -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/sundayLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sunday:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/sundayRoutine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Rest Day"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Button to Update Routine -->
+        <Button
+            android:id="@+id/button_update_routine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Weekly Routine"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backg6"
+        android:scaleType="centerCrop"/>
+
+    <!-- Semi-transparent overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <!-- Content Layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:background="@android:color/transparent"
+            android:elevation="4dp"
+            android:gravity="center_horizontal">
+
+            <!-- Profile Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YOUR PROFILE"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginBottom="40dp"/>
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="24dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Date of Birth -->
+            <TextView
+                android:id="@+id/profileDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth: "
+                android:textSize="24sp"
+                android:textColor="@android:color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Height -->
+            <TextView
+                android:id="@+id/profileHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height: "
+                android:textSize="24sp"
+                android:textColor="@android:color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Weight -->
+            <TextView
+                android:id="@+id/profileWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight: "
+                android:textSize="24sp"
+                android:textColor="@android:color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Goal -->
+            <TextView
+                android:id="@+id/profileGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitness Goal: "
+                android:textSize="24sp"
+                android:textColor="@android:color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Body Type -->
+            <TextView
+                android:id="@+id/profileBodyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body Type: "
+                android:textSize="24sp"
+                android:textColor="@android:color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
