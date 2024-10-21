@@ -1,0 +1,110 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/backg6"
+        android:scaleType="centerCrop"/>
+
+    <!-- Semi-transparent overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/> <!-- Black with 50% transparency -->
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:id="@+id/src"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center">
+
+        <!-- Welcome Title -->
+        <TextView
+            android:id="@+id/welcometitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyFitnessPal"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"
+            android:gravity="center" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Username"
+            android:inputType="text"
+            android:textColorHint="@android:color/darker_gray"
+            android:backgroundTint="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:textColor="#000000" /> <!-- Dark text color for readability -->
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/darker_gray"
+            android:backgroundTint="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:textColor="#000000" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#388E3C"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
+
+        <View
+            android:id="@+id/dividerLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/notNewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center" />
+
+        <!-- Sign Up Link/Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#388E3C"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</FrameLayout>
